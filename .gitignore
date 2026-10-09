@@ -25,6 +25,7 @@
 # Repository files
 !/.gitignore
 !/README.md
+!/LICENSE
 !/Makefile
 
 # R environment (renv): lock file and bootstrap only, never the library

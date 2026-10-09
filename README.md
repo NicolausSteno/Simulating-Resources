@@ -135,6 +135,14 @@ checked against the run that produced each result.
 
 Please cite the original sources when reusing these series.
 
+## Licence
+
+Code: PolyForm Noncommercial License 1.0.0. Figures, results and
+documentation: CC BY-NC 4.0, the licence of the thesis. Research, teaching and
+other non-commercial use is free; commercial use needs a separate licence from
+the author. Third-party data stay under their owners' terms. See
+[`LICENSE`](LICENSE).
+
 ## Citation
 
 If you use this code, please cite the thesis chapter and, for `model_v1.R`,

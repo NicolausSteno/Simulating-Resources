@@ -1,0 +1,39 @@
+DMMCM v4 run manifest
+timestamp   : 2026-08-31 22:58:51 CEST
+mode        : plot
+arguments   : plot free=core loss=cycle eff=off cost=slade paper=true dev=pdf taus=2,5,16,32
+resolved    : maxit=3000 loss=cycle cap=45 cost=slade eff=off redundant=drop tol=1e-8 reltol=1e-6 at=ref reps=1 noise=1 starts=0 seed=7 free=core stage1=600 global=none holdout=0 which= grid=12 span=1.5 pit=400 cores=1 cycw=1 warm= adjust_s0=true state= out= local=0 chain= paper=true dev=pdf taus=2,5,16,32 end_year=0 promote=chi2
+cycle weight: 1
+warm start  : none
+local mstart: none
+free params : c, phi, eps_P, C0, c1, k_E, z_R, n, alpha3, alpha8, gamma, alpha9
+transforms  : log, log, log, log, id, log, log, log, log, log, logit, log
+objective   : Price, Extraction, f2, s4, s8, f9, semis, f3, f13, f14
+file md5    :
+  run_all.R            38ba54588ff87a772de1f40aab14274b
+  model_v2.R           4290f09de1af7b31a38f933ef22295b0
+  gloser_data_v2.R     993052558dc969ccdbe489c0ecd0b768
+
+--- sessionInfo ---
+R version 4.3.0 (2023-04-21)
+Platform: x86_64-apple-darwin20 (64-bit)
+Running under: macOS 26.5.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+
+time zone: Europe/Rome
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices datasets  utils     methods   base     
+
+other attached packages:
+[1] deSolve_1.36
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.0 tools_4.3.0    renv_1.1.5     

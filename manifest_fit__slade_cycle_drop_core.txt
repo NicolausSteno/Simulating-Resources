@@ -1,0 +1,68 @@
+DMMCM v4 run manifest
+timestamp   : 2026-08-26 18:48:49 CEST
+mode        : fit
+arguments   : fit free=core loss=cycle eff=off maxit=auto cap=60 warm=state_profile_best__slade_cycle_drop_core.rds
+resolved    : maxit=auto loss=cycle cap=60 cost=slade eff=off redundant=drop tol=1e-8 reltol=1e-6 at=ref reps=1 noise=1 starts=0 seed=7 free=core stage1=600 global=none holdout=0 which= grid=12 span=1.5 pit=400 cores=1 cycw=1 warm=state_profile_best__slade_cycle_drop_core.rds adjust_s0=true state= out= local=0 chain=
+cycle weight: 1
+warm start  : state_profile_best__slade_cycle_drop_core.rds
+local mstart: none
+free params : c, phi, eps_P, C0, c1, k_E, z_R, n, alpha3, alpha8, gamma, alpha9
+transforms  : log, log, log, log, id, log, log, log, log, log, logit, log
+objective   : Price, Extraction, f2, s4, s8, f9, semis, f3, f13, f14
+file md5    :
+  run_all.R            1942db745f08ce0af97ccebf7fbdb579
+  model_v2.R           4290f09de1af7b31a38f933ef22295b0
+  gloser_data_v2.R     993052558dc969ccdbe489c0ecd0b768
+history:
+  round= 1 iters=  500 value=808.1455 gain=4.852313e-04 conv= 0 minutes= 5.14 link=state_fit__slade_cycle_drop_core.rds
+  round= 3 iters= 1000 value=808.1449 gain=6.193871e-04 conv= 0 minutes=10.39 link=state_fit__slade_cycle_drop_core.rds
+  round= 5 iters= 1500 value=808.1449 gain=0.000000e+00 conv= 0 minutes=16.70 link=state_fit__slade_cycle_drop_core.rds
+  round= 4 iters= 2000 value=808.0593 gain=2.779041e-05 conv=10 minutes= 1.35 link=state_fit__slade_cycle_drop_core.rds
+  round= 5 iters= 2500 value=808.0523 gain=7.023784e-03 conv= 0 minutes=10.41 link=state_fit__slade_cycle_drop_core.rds
+  round= 6 iters= 3000 value=808.0510 gain=1.255087e-03 conv= 0 minutes=18.82 link=state_fit__slade_cycle_drop_core.rds
+  round= 7 iters= 3500 value=808.0510 gain=4.886035e-05 conv=10 minutes=20.05 link=state_fit__slade_cycle_drop_core.rds
+  round= 8 iters= 4000 value=808.0509 gain=8.721395e-05 conv=10 minutes=21.21 link=state_fit__slade_cycle_drop_core.rds
+  round= 9 iters= 4500 value=808.0469 gain=4.006159e-03 conv= 0 minutes=29.12 link=state_fit__slade_cycle_drop_core.rds
+  round=10 iters= 5000 value=808.0456 gain=1.343656e-03 conv= 0 minutes=35.36 link=state_fit__slade_cycle_drop_core.rds
+  round=11 iters= 5500 value=808.0409 gain=4.637268e-03 conv= 0 minutes=41.22 link=state_fit__slade_cycle_drop_core.rds
+  round=12 iters= 6000 value=808.0396 gain=1.327047e-03 conv= 0 minutes=46.00 link=state_fit__slade_cycle_drop_core.rds
+  round=13 iters= 6500 value=808.0347 gain=4.864149e-03 conv= 0 minutes=52.51 link=state_fit__slade_cycle_drop_core.rds
+  round=14 iters= 7000 value=808.0286 gain=6.156445e-03 conv= 0 minutes=57.19 link=state_fit__slade_cycle_drop_core.rds
+  round=15 iters= 7500 value=808.0256 gain=3.011599e-03 conv= 0 minutes=62.58 link=state_fit__slade_cycle_drop_core.rds
+  round=16 iters= 8000 value=808.0221 gain=3.414823e-03 conv= 0 minutes= 6.83 link=state_fit__slade_cycle_drop_core.rds
+  round=17 iters= 8500 value=808.0204 gain=1.692961e-03 conv= 0 minutes=14.79 link=state_fit__slade_cycle_drop_core.rds
+  round=18 iters= 9000 value=808.0191 gain=1.376762e-03 conv= 0 minutes=22.62 link=state_fit__slade_cycle_drop_core.rds
+  round=19 iters= 9500 value=808.0171 gain=1.976277e-03 conv= 0 minutes=31.16 link=state_fit__slade_cycle_drop_core.rds
+  round=20 iters=10000 value=808.0149 gain=2.195548e-03 conv= 0 minutes=41.85 link=state_fit__slade_cycle_drop_core.rds
+  round=21 iters=10500 value=808.0102 gain=4.677399e-03 conv= 0 minutes=50.99 link=state_fit__slade_cycle_drop_core.rds
+  round=22 iters=11000 value=808.0084 gain=1.814544e-03 conv= 0 minutes=58.07 link=state_fit__slade_cycle_drop_core.rds
+  round=23 iters=11500 value=807.9683 gain=4.012794e-02 conv= 1 minutes=71.04 link=state_fit__slade_cycle_drop_core.rds
+  round=24 iters=12000 value=807.9650 gain=3.272375e-03 conv= 0 minutes=11.25 link=state_fit__slade_cycle_drop_core.rds
+  round=25 iters=12500 value=807.9607 gain=4.330828e-03 conv= 0 minutes=19.51 link=state_fit__slade_cycle_drop_core.rds
+  round=26 iters=13000 value=807.9603 gain=3.508395e-04 conv= 0 minutes=27.26 link=state_fit__slade_cycle_drop_core.rds
+  round=27 iters=13500 value=807.9601 gain=2.605356e-04 conv= 0 minutes=36.35 link=state_fit__slade_cycle_drop_core.rds
+  round=28 iters=14000 value=807.9601 gain=0.000000e+00 conv= 0 minutes=47.26 link=state_fit__slade_cycle_drop_core.rds 
+
+--- sessionInfo ---
+R version 4.3.0 (2023-04-21)
+Platform: x86_64-apple-darwin20 (64-bit)
+Running under: macOS 26.5.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+
+time zone: Europe/Rome
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices datasets  utils     methods   base     
+
+other attached packages:
+[1] deSolve_1.36
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.0 tools_4.3.0    renv_1.1.5     

@@ -1,0 +1,57 @@
+DMMCM v4 run manifest
+timestamp   : 2026-08-27 11:41:41 CEST
+mode        : profile
+arguments   : profile free=core loss=cycle eff=off promote=chi2 which=c,phi,C0,k_E,alpha9 grid=11 pit=400 cores=6 span=c:0.0492,phi:0.124,C0:0.0982,k_E:0.0123,alpha9:0.0246
+resolved    : maxit=3000 loss=cycle cap=45 cost=slade eff=off redundant=drop tol=1e-8 reltol=1e-6 at=ref reps=1 noise=1 starts=0 seed=7 free=core stage1=600 global=none holdout=0 which=c,phi,C0,k_E,alpha9 grid=11 span=c:0.0492,phi:0.124,C0:0.0982,k_E:0.0123,alpha9:0.0246 pit=400 cores=6 cycw=1 warm= adjust_s0=true state= out= local=0 chain= promote=chi2
+cycle weight: 1
+warm start  : none
+local mstart: none
+free params : c, phi, eps_P, C0, c1, k_E, z_R, n, alpha3, alpha8, gamma, alpha9
+transforms  : log, log, log, log, id, log, log, log, log, log, logit, log
+objective   : Price, Extraction, f2, s4, s8, f9, semis, f3, f13, f14
+file md5    :
+  run_all.R            cf6f95f2167109c9d65c37448b473b52
+  model_v2.R           4290f09de1af7b31a38f933ef22295b0
+  gloser_data_v2.R     993052558dc969ccdbe489c0ecd0b768
+verdicts:
+  alpha3: no crossing within +/-0.75 (max delta 0.71) -- practically non-identifiable, or widen span=
+  alpha8: one-sided: no UPPER bound within +/-0.75
+  alpha9: identifiable
+  c: identifiable
+  C0: identifiable
+  c1: identifiable
+  eps_P: STRUCTURALLY non-identifiable (flat: max delta 0.007)
+  gamma: identifiable
+  k_E: identifiable
+  n: STRUCTURALLY non-identifiable (flat: max delta 0.004)
+  phi: identifiable
+  z_R: identifiable 
+promotion:
+  rule promote=chi2 (1.921); best point 0.09721 below the fit (alpha8 at offset +0.300), above the solver floor 0.01921 but below threshold; banked to state_profile_subthreshold__slade_cycle_drop_core.rds, NOT promoted, fit NOT rerun. 
+note:
+  threshold nominal; composite likelihood + autocorrelated residuals => intervals too narrow 
+
+--- sessionInfo ---
+R version 4.3.0 (2023-04-21)
+Platform: x86_64-apple-darwin20 (64-bit)
+Running under: macOS 26.5.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+
+time zone: Europe/Rome
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices datasets  utils     methods  
+[8] base     
+
+other attached packages:
+[1] deSolve_1.36
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.0 tools_4.3.0    renv_1.1.5     

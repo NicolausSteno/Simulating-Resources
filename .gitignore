@@ -1,0 +1,86 @@
+# =====================================================================
+# Simulating-Resources -- thesis Chapter 3 ("Simulating resources")
+#
+# WHITELIST. Everything in this folder is ignored by default and only the
+# files the chapter actually uses are re-included below. A new file will
+# therefore never be published by accident: to publish one, add a
+# `!/filename` line here on purpose.
+#
+# Deliberately excluded (kept locally, never pushed): development notes
+# (CHANGES_v*.md, README_dev_v3.md), the withdrawn Julia layer (*.jl,
+# Project.toml, gloser_data_v2.csv), superseded variant runs
+# (slade_moment / slade_bp / slade_bpamp / ho2005 / v4theta / state_*),
+# archive folders (pre_*/, post_corr/, stale/, v4theta_dy0/), the recovery
+# test, helper scripts not behind any reported result, figures not in the
+# chapter (fit_v2*, convergence*), the chapter .tex/.bib sources (they live
+# in the thesis repository), the publisher PDF of Gambaro et al. (2025),
+# logs, backups and macOS files.
+# =====================================================================
+
+# 1. Ignore everything at the top level ...
+/*
+
+# 2. ... then re-include what the chapter uses.
+
+# Repository files
+!/.gitignore
+!/README.md
+!/Makefile
+
+# R environment (renv): lock file and bootstrap only, never the library
+!/.Rprofile
+!/renv.lock
+!/renv/
+/renv/*
+!/renv/.gitignore
+!/renv/activate.R
+!/renv/settings.json
+
+# Model, data and estimation code behind the chapter
+!/run_all.R
+!/model_v2.R
+!/gloser_data_v2.R
+!/residual_qq.R
+!/tau_sweep.R
+!/model_v1demand.R
+
+# Published model: code of Gambaro et al. (2025), Resources Policy 103, 105548
+!/model_v1.R
+
+# Reported fit (configuration slade_cycle_drop_core): state, estimates, manifests
+!/state_multistart__slade_cycle_drop_core.rds
+!/multistart__slade_cycle_drop_core.csv
+!/state_fit__slade_cycle_drop_core.rds
+!/state_profile__slade_cycle_drop_core.rds
+!/state_profile_best__slade_cycle_drop_core.rds
+!/state_profile_subthreshold__slade_cycle_drop_core.rds
+!/params_full__slade_cycle_drop_core.json
+!/params_fitted__slade_cycle_drop_core.json
+!/fitted_trajectory__slade_cycle_drop_core.csv
+!/profile__slade_cycle_drop_core.csv
+!/manifest_fit__slade_cycle_drop_core.txt
+!/manifest_diag__slade_cycle_drop_core.txt
+!/manifest_profile__slade_cycle_drop_core.txt
+!/manifest_plot__slade_cycle_drop_core.txt
+
+# Figures that appear in the chapter
+!/profile__slade_cycle_drop_core.png
+!/resid_qq__slade_cycle_drop_core.png
+!/resid_vs_fitted__slade_cycle_drop_core.png
+!/paper_stocks__slade_cycle_drop_core.pdf
+!/paper_flows__slade_cycle_drop_core.pdf
+!/paper_newflows__slade_cycle_drop_core.pdf
+!/paper_prices__slade_cycle_drop_core.pdf
+!/paper_supply__slade_cycle_drop_core.pdf
+!/paper_delay_prices__slade_cycle_drop_core.pdf
+!/paper_delay_supply__slade_cycle_drop_core.pdf
+!/paper_delay_flows__slade_cycle_drop_core.pdf
+!/paper_delay_stocks__slade_cycle_drop_core.pdf
+
+# 3. Never publish, even if re-included by mistake above
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+*.bak*
+*.log

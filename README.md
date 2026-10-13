@@ -145,6 +145,9 @@ the author. Third-party data stay under their owners' terms. See
 
 ## Citation
 
-If you use this code, please cite the thesis chapter and, for `model_v1.R`,
-Gambaro et al. (2025). A Zenodo DOI for this repository will be added here once
-the first release is archived.
+Gambaro, N. (2026). NicolausSteno/Simulating-Resources: Publishing R code for
+DDE models and optimisations (Version v2). Zenodo.
+<https://doi.org/10.5281/zenodo.23271275>
+
+Please also cite the thesis chapter and, for `model_v1.R`, Gambaro et al.
+(2025).
